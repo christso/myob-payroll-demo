@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using MYOB.Payroll.Data;
 using MYOB.Payroll.Models;
 
 namespace MYOB.Payroll
@@ -31,6 +32,7 @@ namespace MYOB.Payroll
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddDbContext<PayrollContext>(options =>
                 options.UseSqlServer(connection));
+            services.AddTransient<EmployeeRepository, EmployeeRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
