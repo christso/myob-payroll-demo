@@ -5,6 +5,13 @@ VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MYOB.Payroll", "MYOB.Payroll\MYOB.Payroll.csproj", "{A8843830-0232-4C53-9256-3D17A0347E71}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{11921DFF-4404-4090-AC1D-BA730FA29765}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MYOB.Payroll.Tests", "MYOB.Payroll.Tests\MYOB.Payroll.Tests.csproj", "{B8B671A8-6B4D-49E0-B8A9-2F0AAA73682F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +22,10 @@ Global
 		{A8843830-0232-4C53-9256-3D17A0347E71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8843830-0232-4C53-9256-3D17A0347E71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8843830-0232-4C53-9256-3D17A0347E71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8B671A8-6B4D-49E0-B8A9-2F0AAA73682F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8B671A8-6B4D-49E0-B8A9-2F0AAA73682F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8B671A8-6B4D-49E0-B8A9-2F0AAA73682F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8B671A8-6B4D-49E0-B8A9-2F0AAA73682F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

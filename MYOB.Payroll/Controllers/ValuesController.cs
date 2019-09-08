@@ -41,5 +41,10 @@ namespace MYOB.Payroll.Controllers
         public void Delete(int id)
         {
         }
+
+        public string GetResult()
+        {
+            return "hello";
+        }
     }
 }

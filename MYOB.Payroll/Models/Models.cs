@@ -22,7 +22,22 @@ namespace MYOB.Payroll.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public decimal AnnualSalary { get; set; }
-        public decimal SuperRate { get; set; }
+    }
 
+    public class IncomeTaxRate
+    {
+        public string Id { get; set; }
+        public decimal LowerIncome { get; set; }
+        public decimal UpperIncome { get; set; }
+    }
+
+    public class Payslip
+    {
+        public string EmployeeId { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public DateTime PeriodStart { get; set; }
+        public DateTime PeriodEnd { get; set; }
+        public decimal GrossIncome { get; set; }
     }
 }
