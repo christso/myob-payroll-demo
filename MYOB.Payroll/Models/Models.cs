@@ -29,6 +29,8 @@ namespace MYOB.Payroll.Models
         public string Id { get; set; }
         public decimal LowerIncome { get; set; }
         public decimal UpperIncome { get; set; }
+        public decimal BaseTax { get; set; }
+        public decimal MultiplierTax { get; set; }
     }
 
     public class Payslip
@@ -39,5 +41,8 @@ namespace MYOB.Payroll.Models
         public DateTime PeriodStart { get; set; }
         public DateTime PeriodEnd { get; set; }
         public decimal GrossIncome { get; set; }
+        public decimal IncomeTax { get; set; }
+        public decimal NetIncome { get; set; }
+        public decimal Super { get; set; }
     }
 }
