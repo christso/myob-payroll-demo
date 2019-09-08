@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace MYOB.Payroll.Migrations
 {
@@ -10,7 +11,7 @@ namespace MYOB.Payroll.Migrations
                 name: "Employees",
                 columns: table => new
                 {
-                    Id = table.Column<string>(nullable: false),
+                    Id = table.Column<Guid>(nullable: false),
                     FirstName = table.Column<string>(nullable: true),
                     LastName = table.Column<string>(nullable: true),
                     AnnualSalary = table.Column<decimal>(type: "decimal(18,2)", nullable: false)

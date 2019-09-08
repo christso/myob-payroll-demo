@@ -24,8 +24,13 @@ namespace MYOB.Payroll.Data
                 {
                     AnnualSalary = 60500,
                     FirstName = "Christopher",
-                    LastName = "Tso",
-                    Id = Guid.NewGuid().ToString()
+                    LastName = "Tso"
+                });
+                _context.Add(new Employee()
+                {
+                    AnnualSalary = 70000,
+                    FirstName = "Jennifer",
+                    LastName = "Lopez"
                 });
             }
             _context.SaveChanges();

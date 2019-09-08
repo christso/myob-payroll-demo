@@ -27,7 +27,7 @@ namespace MYOB.Payroll.Controllers
         {
             try
             {
-                var emp = _employeeRepository.FindAll().FirstOrDefault(x => x.Id == id);
+                var emp = _employeeRepository.FindAll().FirstOrDefault(x => x.Id.Equals(id));
                 return Ok(emp);
             }
             catch (Exception ex)

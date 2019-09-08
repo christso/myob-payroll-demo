@@ -16,7 +16,7 @@ namespace MYOB.Payroll.Tests
         public void TestPayslip()
         {
             var util = new PayslipUtil();
-            var empId = Guid.NewGuid().ToString();
+            var empId = Guid.NewGuid();
             var employee = new Employee()
             {
                 Id = empId,

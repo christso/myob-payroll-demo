@@ -5,9 +5,17 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
-
 namespace MYOB.Payroll.Models
 {
+    public class IdentityObject
+    {
+        public IdentityObject()
+        {
+            Id = Guid.NewGuid();
+        }
+        public Guid Id { get; set; }
+    }
+
     public class PayrollContext : DbContext
     {
         public PayrollContext(DbContextOptions<PayrollContext> options)
@@ -19,9 +27,8 @@ namespace MYOB.Payroll.Models
         public DbSet<Employee> Employees { get; set; }
     }
 
-    public class Employee
+    public class Employee : IdentityObject
     {
-        public string Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         [Column(TypeName = "decimal(18,2)")]
